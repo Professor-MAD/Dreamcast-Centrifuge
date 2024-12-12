@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Dreamcast Centrifuge</title>
+</head>
+<body>
+    <div id="big-daddy-wrap"> 
+        <div id="center-content-container">
+            
+            <div id="header">
+                <div class="container">
+                    <div id="hamburger-menu" class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    
+                    <div id="header-divider"></div>
+
+                    <div id="sign-in-dropdown" class="dropdown-menu">
+                        <div id="sign-in-icon">&#128100;</div>
+                        <div id="sign-in-options" class="sign-in-options">
+                            <a href="#">Sign in</a>
+                            <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-information-container">
+                <div class="container-contact">
+                    <h1>Contact Form</h1>
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="5" maxlength="500" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h4>What Video Game Should I Play - Dreamcast Edition - 2024 - ProfessorMAD Creations Inc.</h4>
+    </div>   
+
+   <audio id="audio-ring">
+    <source src="Sonic_Ring_Sound_Effect_HD.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio-oh-no">
+    <source src="Sonic_Oh_No_Sound_Effect.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="contact.js"></script>
+</html>

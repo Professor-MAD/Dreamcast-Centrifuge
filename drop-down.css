@@ -1,0 +1,360 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    cursor: url('Sonic-Normal-Select_page_01.png'), auto;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: url('Sonic\ -\ Text\ Select_page_01.png'), auto;
+}
+
+#big-daddy-wrap {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slideshow;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('dreamcast-characters.jpg');
+    }
+    25% {
+        background-image: url('dreamcast-characters-2.jpg');
+    }
+    50% {
+        background-image: url('dreamcast-characters-3.jpg');
+    }
+    75% {
+        background-image: url('dreamcast-characters-4.jpg');
+    }
+    100% {
+        background-image: url('dreamcast-characters.jpg');
+    }
+}
+
+
+#center-content-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#library-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    overflow-y: auto;
+}
+
+#instructions-container{
+    display: flex;
+    flex-direction: column;
+    justify-items:last baseline;
+    align-items: center;
+    height: 30%;
+    min-height: 30%;
+    width: 98%;
+    background: linear-gradient(to right, #6E78F7, #B53FBF, #FF416C, #FF4B2B);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+#instructions-container-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+}
+
+#left-side-instructions{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: last baseline;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    
+}
+#center-instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+#right-side-instructions{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: last baseline;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+#searchOptions{
+    display: none;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    width: 80%;
+    background: linear-gradient(to right, orange, blue);
+    border-radius: 20px;
+    cursor: url('Sonic\ -\ Link\ Select_page_01.png'), auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* Hamburger Button Styles */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    cursor: url('Sonic\ -\ Link\ Select_page_01.png'), auto;
+    padding: 10px;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+/* Style for the opened state of the hamburger menu */
+.opened .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.opened .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.opened .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Position the hamburger menu in the left corner */
+.hamburger-menu {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Dropdown Menu Styles */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+/* Sign-in Dropdown Menu Styles */
+#sign-in-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#sign-in-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sign-in-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Change right: 0; to left: 0; */
+    z-index: 1000;
+    background-color: #7c7979;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.sign-in-options a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 100px;
+}
+
+.sign-in-options a:hover {
+    background-color: #555;
+    text-align: center;
+    min-width: 100px;
+}
+
+
+
+/* Game Container Styles */
+
+
+.game-container.selected {
+    border: 5px solid red;
+}
+
+.game-container:hover {
+    background: linear-gradient(to bottom, #CCCCCC, #FFA500);
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    min-height: 20%;
+    width: 98%;
+    background: linear-gradient(to bottom, #CCCCCC, #3498db);
+    margin: 1%;
+    margin-top: 1%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: url('Sonic-Normal-Select_page_01.png'), auto;
+}
+
+
+.game-art-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    margin: 1%;
+}
+
+.game-art-image{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 90%;
+    width: 70%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.game-title-text-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+}
+
+
+.game-title-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

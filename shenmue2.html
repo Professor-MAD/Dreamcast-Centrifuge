@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shenmue II</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        
+        #big-daddy-wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        
+        #background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+        
+        #center-content-container {
+            z-index: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+            width: 30%;
+            background-color: rgba(211, 211, 211, 0.7);
+            margin: 2%;
+            border-radius: 10%;
+        }
+        
+        #game-art-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 75%;
+            margin: 2%;
+        }
+        
+        #game-title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            width: 75%;
+            background-color: darkgray;
+            margin: 2%;
+            border: 1px solid black;
+            border-radius: 20%;
+            background-image: linear-gradient(45deg, darkgray, gray);
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 0 5px rgba(253, 252, 252, 0.993);
+            color: black;
+        }
+        
+        
+        #go-home-button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            width: 30%;
+            background-color: lightgreen;
+            margin: 2%;
+            border-color: black, solid;
+            border-radius: 10%;
+            background-image: linear-gradient(45deg, lightgreen, green);
+            cursor: pointer;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+            
+        }
+        
+        #shenmue2-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            width: 100%;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        
+        #random-game-button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            width: 40%;
+            background-color: orange;
+            margin: 2%;
+            border-color: black, solid;
+            border-radius: 10%;
+            background-image: linear-gradient(45deg, red, yellow);
+            cursor: pointer;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        
+        #dice{
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 50%;
+        }
+        
+        #footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 5%;
+            width: 100%;
+            background-color: darkslategray;
+        }
+            </style>
+</head>
+<body>
+    <div id="big-daddy-wrap">
+        <img id="background-image" src="shenmue2background.jpg" alt="">
+        <div id="center-content-container">
+            <div id="game-art-container">
+                <img id="shenmue2-image" src="shenmue2.jpg" alt="">
+            </div>
+            <div id="game-title-container">
+                <h1>Shenmue II</h1>
+            </div>
+            <button id="go-home-button">
+                <a href="custom-games.html">
+                    <h4>Go Home!</h4>
+                </a>
+            </button>
+            <button id="random-game-button">
+                <h4>Reroll!</h4>
+                <img id="dice" src="dice.gif" alt="">
+            </button>
+        </div>
+        <div id="footer">
+            <h4>What Video Game Should I Play - Dreamcast Edition - 2024 - ProfessorMAD Creations Inc.</h4>
+        </div>
+    </div>
+    <script src="individual-game.js"></script>
+</body>
+</html>

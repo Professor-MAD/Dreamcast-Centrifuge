@@ -1,0 +1,225 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    cursor: url('Sonic-Normal-Select_page_01.png'), auto;
+}
+
+#big-daddy-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height to viewport height */
+    width: 100%;
+    background-image: url('dreamcast_menu_background_by_tomthedeviant2_dfbudlf-pre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hamburger Button Styles */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    cursor: url('Sonic\ -\ Link\ Select_page_01.png'), auto;
+    padding: 10px;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+/* Style for the opened state of the hamburger menu */
+.opened .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.opened .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.opened .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Dropdown Menu Styles */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+
+/* Position the hamburger menu in the left corner */
+.hamburger-menu {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+#center-content-container {
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    background-color: rgba(211, 211, 211, 0.7);
+    margin: 3%;
+    border-radius: 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#console-art-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 75%;
+    margin: 2%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    
+
+}
+
+#console-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 75%;
+    margin: 5%;
+    
+}
+
+#random-game-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 30%;
+    background: linear-gradient(to bottom, #ffffff, #008000);
+    margin: 2%;
+    border-color: black, solid;
+    border-radius: 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: url('Sonic\ -\ Alternate\ Select_page_01.png'), auto;
+}
+
+#dreamcast-console-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+
+/* Custom Game List Styles Start Here */
+#customGameList {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: flex-start; /* Align items to start of flex container */
+    padding: 10px; /* Add padding around the custom game list */
+    max-width: 100%; /* Limit the width of the custom game list */
+    list-style-type: none;
+    background: linear-gradient(to right, #6E78F7, #B53FBF, #FF416C, #FF4B2B);
+    overflow: auto; /* Add overflow property to handle content exceeding parent */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Style each game item */
+#customGameList li {
+    flex: 0 0 calc(25% - 20px); /* Make each item take 25% width with spacing */
+    margin: 10px; /* Add margin around each game item */
+    text-align: center; /* Center the text or image within each game item */
+    word-wrap: break-word; /* Wrap long content within items */
+}
+
+/* Style the images inside game items */
+#customGameList img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}

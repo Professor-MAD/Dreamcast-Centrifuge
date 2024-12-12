@@ -1,0 +1,45 @@
+﻿[UpArrow]
+Path=Sonic - Alternate Select.ani
+
+[Wait]
+Path=Sonic - Busy.ani
+
+[SizeNWSE]
+Path=Sonic - Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=Sonic - Diagonal Resize 2.ani
+
+[NWPen]
+Path=Sonic - Handwriting.ani
+
+[Help]
+Path=Sonic - Help Select.ani
+
+[SizeWE]
+Path=Sonic - Horizontal Resize.ani
+
+[Hand]
+Path=Sonic - Link Select.ani
+
+[SizeAll]
+Path=Sonic - Move.ani
+
+[Arrow]
+Path=Sonic - Normal Select.ani
+
+[Crosshair]
+Path=Sonic - Precision Select.ani
+
+[IBeam]
+Path=Sonic - Text Select.ani
+
+[No]
+Path=Sonic - Unavailable.cur
+
+[SizeNS]
+Path=Sonic - Vertical Resize.ani
+
+[AppStarting]
+Path=Sonic - Working in Background.ani
+
